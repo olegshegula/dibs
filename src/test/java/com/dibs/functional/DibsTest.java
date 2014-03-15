@@ -8,6 +8,6 @@ public class DibsTest extends TestBase {
 	  @Test
 	  public void testDibsSolutionsOK() throws Exception {
 		  app.getNavigationHelper().openMainPage();
-	        
+		  app.getClickLinkHelper().clickOnSolutionsFooterLink();
 	  }
 }

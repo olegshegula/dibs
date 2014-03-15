@@ -5,14 +5,16 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PageManager {
 
-	private WebDriver driver;
+	private WebDriver driver;	
 
-	public LoginPage loginPage;
+	public MainPage mainPage;
+
+	public SolutionsPage solutionsPage;
 
 	public PageManager(WebDriver driver) {
-		this.driver = driver;
-		loginPage = initElements(new LoginPage(this));
-
+		this.driver = driver;		
+		mainPage = initElements(new MainPage(this));
+		solutionsPage = initElements(new SolutionsPage(this));
 	}
 
 	private <T extends Page> T initElements(T page) {

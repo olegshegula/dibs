@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Tests" duration-ms="30887" started-at="2014-03-15T12:50:48Z" finished-at="2014-03-15T12:51:19Z">
+  <suite name="Tests" duration-ms="17749" started-at="2014-03-15T14:44:58Z" finished-at="2014-03-15T14:45:16Z">
     <groups>
     </groups>
-    <test name="Test1" duration-ms="30887" started-at="2014-03-15T12:50:48Z" finished-at="2014-03-15T12:51:19Z">
+    <test name="Test1" duration-ms="17749" started-at="2014-03-15T14:44:58Z" finished-at="2014-03-15T14:45:16Z">
       <class name="com.dibs.functional.DibsTest">
-        <test-method status="PASS" signature="init()[pri:0, instance:com.dibs.functional.DibsTest@28e914c8]" name="init" is-config="true" duration-ms="28050" started-at="2014-03-15T14:50:48Z" finished-at="2014-03-15T14:51:16Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.dibs.functional.DibsTest@416a8198]" name="init" is-config="true" duration-ms="12314" started-at="2014-03-15T16:44:58Z" finished-at="2014-03-15T16:45:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method status="PASS" signature="testDibsSolutionsOK()[pri:0, instance:com.dibs.functional.DibsTest@28e914c8]" name="testDibsSolutionsOK" duration-ms="2776" started-at="2014-03-15T14:51:17Z" finished-at="2014-03-15T14:51:19Z">
+        <test-method status="PASS" signature="testDibsSolutionsOK()[pri:0, instance:com.dibs.functional.DibsTest@416a8198]" name="testDibsSolutionsOK" duration-ms="5385" started-at="2014-03-15T16:45:11Z" finished-at="2014-03-15T16:45:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testDibsSolutionsOK -->
-        <test-method status="PASS" signature="stop()[pri:0, instance:com.dibs.functional.DibsTest@28e914c8]" name="stop" is-config="true" duration-ms="360" started-at="2014-03-15T14:51:19Z" finished-at="2014-03-15T14:51:20Z">
+        <test-method status="PASS" signature="stop()[pri:0, instance:com.dibs.functional.DibsTest@416a8198]" name="stop" is-config="true" duration-ms="423" started-at="2014-03-15T16:45:16Z" finished-at="2014-03-15T16:45:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- stop -->

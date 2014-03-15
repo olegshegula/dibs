@@ -5,6 +5,7 @@
     <classes>
       <class name="com.dibs.functional.DibsTest">
         <methods>
+          <include name="stop"/>
           <include name="testDibsSolutionsOK"/>
           <include name="init"/>
         </methods>

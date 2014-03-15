@@ -97,14 +97,14 @@
       </activation>
     </profile>
     <profile>
-      <id>dev</id>
+      <id>chrome_local</id>
       <properties>
-        <env>dev</env>
+        <env>local</env>
         <user.username></user.username>
         <user.password></user.password>
         <grid2.hub></grid2.hub>
-        <site.url></site.url>
-        <browser.name></browser.name>
+        <site.url>http://www.dibspayment.com/</site.url>
+        <browser.name>chrome</browser.name>
         <browser.version></browser.version>
         <browser.platform></browser.platform>
       </properties>

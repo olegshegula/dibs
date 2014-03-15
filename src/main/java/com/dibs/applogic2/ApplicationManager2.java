@@ -33,7 +33,7 @@ public class ApplicationManager2 implements ApplicationManager {
 		driver = WebDriverFactory.getInstance(gridHubUrl, browser, username,
 				password);
 		driver.manage().deleteAllCookies();
-		// driver.manage().window().maximize();
+		 driver.manage().window().maximize();
 		// driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 
 		userHelper = new UserHelper2(this);
@@ -41,7 +41,9 @@ public class ApplicationManager2 implements ApplicationManager {
 		navHelper = new NavigationHelper2(this);
 		clicklinkHelper = new ClickLinkHelper2(this);
 
-		getNavigationHelper().openMainPage();
+		//getNavigationHelper().openMainPage();
+		
+		
 	}
 
 	@Override

@@ -10,5 +10,11 @@ public class ClickLinkHelper2 extends DriverBasedHelper implements ClickLinkHelp
 		
 	}
 
+	@Override
+	public void clickOnSolutionsFooterLink() {
+		pages.mainPage.clickOnSolutionsFooterLink();
+		
+	}
+
 	
 }
