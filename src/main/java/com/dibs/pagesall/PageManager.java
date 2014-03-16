@@ -5,16 +5,22 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PageManager {
 
-	private WebDriver driver;	
+	private WebDriver driver;
 
 	public MainPage mainPage;
 
 	public SolutionsPage solutionsPage;
 
+	public SearchResultPage searchresultPage;
+
+	public CustomerSupportPage customersupportPage;
+
 	public PageManager(WebDriver driver) {
-		this.driver = driver;		
+		this.driver = driver;
 		mainPage = initElements(new MainPage(this));
 		solutionsPage = initElements(new SolutionsPage(this));
+		searchresultPage = initElements(new SearchResultPage(this));
+		customersupportPage = initElements(new CustomerSupportPage(this));
 	}
 
 	private <T extends Page> T initElements(T page) {

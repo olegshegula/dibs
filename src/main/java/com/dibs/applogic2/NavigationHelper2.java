@@ -24,12 +24,4 @@ public class NavigationHelper2 extends DriverBasedHelper implements
 	}
 
 
-	
-
-	// @Override
-	// public void gotoUserCabinetPage() {
-	// pages.internalPage.ensurePageLoaded().clickUserCabinetPage();
-
-	// }
-
 }

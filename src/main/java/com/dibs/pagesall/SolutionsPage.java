@@ -22,9 +22,32 @@ public class SolutionsPage extends MainPage {
 	@FindBy(xpath = "//h3/a[text()='Bank Payments']")
 	private WebElement bankPaymentAtrLink;
 	
+	@FindBy(xpath = "//*[@id='search-block-form']/div/a/i[@class='icon-search']")
+	private WebElement searchBtn;
+	
+	@FindBy(id = "edit-search-block-form--2")
+	private WebElement inputSearchField;
+	
+	public SolutionsPage enableInputSearchFieldClick(){
+		searchBtn.click();
+		return pages.solutionsPage;
+	}
+	
+	public void searchBtnClick(){
+		searchBtn.click();
+		
+	}
+	
+	public SolutionsPage setSeachField(String text){
+		inputSearchField.clear();
+		inputSearchField.sendKeys(text);
+		return pages.solutionsPage;
+	}
+	
 	public String getBankPaymentAtr() {
 		return bankPaymentAtrLink.getAttribute("href");
-	}
+	}	
+	
 	
 	public String getCardPaymentAtr() {
 		return cardPaymentsLink.getAttribute("href");

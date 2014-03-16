@@ -41,7 +41,7 @@ public class ApplicationManager2 implements ApplicationManager {
 		navHelper = new NavigationHelper2(this);
 		clicklinkHelper = new ClickLinkHelper2(this);
 
-		//getNavigationHelper().openMainPage();
+		
 		
 		
 	}
