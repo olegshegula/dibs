@@ -15,7 +15,7 @@ public class NavigationHelper2 extends DriverBasedHelper implements
 	@Override
 	public void openMainPage() {
 		driver.get(baseUrl);
-		pages.mainPage.ensurePageLoaded() ;
+		//pages.mainPage.ensurePageLoaded() ;
 	}
 
 	@Override

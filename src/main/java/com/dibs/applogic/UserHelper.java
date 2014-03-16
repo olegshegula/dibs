@@ -1,19 +1,10 @@
 package com.dibs.applogic;
 
+import com.dibs.model.Links;
 
-import com.dibs.model.User;
-
-public interface UserHelper {
-
-	//void loginAs(User user);
-
-	//void logout();
-
-	//boolean isLoggedIn();
-
-	//boolean isLoggedInAs(User user);
-
-	//boolean isNotLoggedIn();
-
+public interface UserHelper {	
+	boolean isCardPaymentExist(Links cardPaymentAtr);
+	boolean isInvocePaymentExist(Links invocePaymentAtr);
+	boolean isBankPaymentExist(Links bankPaymentAtr);
 
 }

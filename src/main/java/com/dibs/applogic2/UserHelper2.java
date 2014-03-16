@@ -1,6 +1,7 @@
 package com.dibs.applogic2;
 
 import com.dibs.applogic.UserHelper;
+import com.dibs.model.Links;
 
 public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 
@@ -8,41 +9,26 @@ public class UserHelper2 extends DriverBasedHelper implements UserHelper {
 		super(manager.getWebDriver());
 	}
 
-	// @Override
-	// public void loginAs(User user) {
-	// pages.loginPage.ensurePageLoaded().setUsernameField(user.getLogin())
-	// .setPasswordField(user.getPassword()).clickSubmitButton();
+	@Override
+	public boolean isCardPaymentExist(Links cardPaymentAtr) {
+		return pages.solutionsPage.ensurePageLoaded()
+		 .getCardPaymentAtr().contains(cardPaymentAtr.getLinkatribut());
+		 
+	}
 
-	// }
+	@Override
+	public boolean isInvocePaymentExist(Links invocePaymentAtr) {
+		
+		return pages.solutionsPage.ensurePageLoaded()
+				.getInvocePaymentAtr().contains(invocePaymentAtr.getLinkatribut());
+	}
 
-	// @Override
-	// public void logout() {
-	// pages.internalPage.ensurePageLoaded().clickLogoutLink();
-	// }
+	@Override
+	public boolean isBankPaymentExist(Links bankPaymentAtr) {
+		
+		return pages.solutionsPage.ensurePageLoaded()
+				.getBankPaymentAtr().contains(bankPaymentAtr.getLinkatribut());
+	}
 
-	// @Override
-	// public boolean isLoggedIn() {
-	// return pages.internalPage.waitPageLoaded();
-	// }
-
-	// @Override
-	// public boolean isLoggedInAs(User user) {
-
-	// return isLoggedIn()
-	// && getLoggedUser().getLogin().equals(user.getLogin());
-
-	// }
-
-	// @Override
-	// public boolean isNotLoggedIn() {
-	// return pages.loginPage.waitPageLoaded();
-	// }
-
-	// private User getLoggedUser() {
-	// UserProfilePage userProfile = pages.internalPage.ensurePageLoaded()
-	// .clickUserProfilePage().ensurePageLoaded();
-	// return new User().setLogin(userProfile.getUsername());
-
-	// }
-
+	
 }
